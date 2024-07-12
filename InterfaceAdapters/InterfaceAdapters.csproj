@@ -9,7 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\EnterpriseBusinessRules\EnterpriseBusinessRules.csproj" />
     <ProjectReference Include="..\ApplicationBusinessRules\ApplicationBusinessRules.csproj" />
-
   </ItemGroup>
 
   <ItemGroup>

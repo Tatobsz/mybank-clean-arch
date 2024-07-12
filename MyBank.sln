@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyBank", "MyBank\MyBank.csproj", "{C5094176-6952-4EF8-BC06-EDC653D21A0F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyBank", "MyBank\MyBank.csproj", "{C5094176-6952-4EF8-BC06-EDC653D21A0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceAdapters", "InterfaceAdapters\InterfaceAdapters.csproj", "{6A4433E0-F4CE-4DD1-9010-F6CA67846396}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterfaceAdapters", "InterfaceAdapters\InterfaceAdapters.csproj", "{6A4433E0-F4CE-4DD1-9010-F6CA67846396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationBusinessRules", "ApplicationBusinessRules\ApplicationBusinessRules.csproj", "{24D9484F-FAAD-4E0E-B2DD-DF4D3020B55B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationBusinessRules", "ApplicationBusinessRules\ApplicationBusinessRules.csproj", "{24D9484F-FAAD-4E0E-B2DD-DF4D3020B55B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseBusinessRules", "EnterpriseBusinessRules\EnterpriseBusinessRules.csproj", "{81DCC26F-C0FE-4FC6-9F7A-536C212EACCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EnterpriseBusinessRules", "EnterpriseBusinessRules\EnterpriseBusinessRules.csproj", "{81DCC26F-C0FE-4FC6-9F7A-536C212EACCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationBusinessRules.Test", "ApplicationBusinessRules.Test\ApplicationBusinessRules.Test.csproj", "{E53631D9-3EF1-4A2B-AE4E-C2B933E03D67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnterpriseBusinessRules.Test", "EnterpriseBusinessRules.Test\EnterpriseBusinessRules.Test.csproj", "{F341AA75-9956-4033-ABA2-9D7FDE23C4BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceAdapters.Test", "InterfaceAdapters.Test\InterfaceAdapters.Test.csproj", "{0C8B39BB-63C5-4E1B-950E-E923B998761C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{81DCC26F-C0FE-4FC6-9F7A-536C212EACCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81DCC26F-C0FE-4FC6-9F7A-536C212EACCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81DCC26F-C0FE-4FC6-9F7A-536C212EACCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53631D9-3EF1-4A2B-AE4E-C2B933E03D67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53631D9-3EF1-4A2B-AE4E-C2B933E03D67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53631D9-3EF1-4A2B-AE4E-C2B933E03D67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53631D9-3EF1-4A2B-AE4E-C2B933E03D67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F341AA75-9956-4033-ABA2-9D7FDE23C4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F341AA75-9956-4033-ABA2-9D7FDE23C4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F341AA75-9956-4033-ABA2-9D7FDE23C4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F341AA75-9956-4033-ABA2-9D7FDE23C4BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C8B39BB-63C5-4E1B-950E-E923B998761C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C8B39BB-63C5-4E1B-950E-E923B998761C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C8B39BB-63C5-4E1B-950E-E923B998761C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C8B39BB-63C5-4E1B-950E-E923B998761C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

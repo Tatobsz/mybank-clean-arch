@@ -1,16 +1,9 @@
-using ApplicationBusinessRules.InputPorts;
-using ApplicationBusinessRules.UseCases;
-using InterfaceAdapters.Gateways;
-using Microsoft.AspNetCore.Mvc;
-
 namespace MyBank.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
     public class TransferenciaController : ControllerBase
     {
-
-
         [HttpPost]
         public async Task<IActionResult> Transferir([FromBody] DadosDeTrasferenciaDTO dadosDaTransferencia)
         {

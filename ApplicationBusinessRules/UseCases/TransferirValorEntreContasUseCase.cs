@@ -8,8 +8,10 @@ namespace ApplicationBusinessRules.UseCases
     {
         public async Task ExcecutarCasoDeUso(DadosDaContaBancariaDTO contaOrigemParam, DadosDaContaBancariaDTO contaDestinoParam, double valor)
         {
-            var contaOrigem = await contaBancariaDBPort.ObterContaBancaria(contaOrigemParam.Numero, contaOrigemParam.Agencia);
-            var contaDestino = await contaBancariaDBPort.ObterContaBancaria(contaDestinoParam.Numero, contaDestinoParam.Agencia);
+            var contaOrigem = await contaBancariaDBPort.ObterContaBancaria(contaOrigemParam.Numero, contaOrigemParam.Agencia)
+                ?? throw new Exception("Conta de origem não encontrada");
+            var contaDestino = await contaBancariaDBPort.ObterContaBancaria(contaDestinoParam.Numero, contaDestinoParam.Agencia)
+                ?? throw new Exception("Conta de destino não encontrada");
 
             var transferencia = new TransferenciaBancaria();
             var deuCertoATransferencia = transferencia.TranferirEntreContas(contaOrigem, contaDestino, valor);

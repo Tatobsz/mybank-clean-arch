@@ -3,7 +3,7 @@
     public class ContaBancaria
     {
         public int Numero { get; set; }
-        public string NomeProprietario { get; set; }
+        public string NomeProprietario { get; set; } = String.Empty;
         public double Saldo { get; set; }
         public int Agencia { get; set; }
 
@@ -20,7 +20,7 @@
         }
 
         public void Depositar(double valor)
-        {            
+        {
             Saldo += valor;
         }
     }
