@@ -2,6 +2,11 @@ namespace EnterpriseBusinessRules
 {
     public class TransferenciaBancaria
     {
+        public TransferenciaBancaria()
+        {
+            Date = DateTime.Now;
+        }
+        public DateTime Date { get; set; }
         public bool TranferirEntreContas(ContaBancaria contaOrigem, ContaBancaria contaDestino, double valor)
         {
             try

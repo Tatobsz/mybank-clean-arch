@@ -7,7 +7,7 @@
         public double Saldo { get; set; }
         public int Agencia { get; set; }
 
-        public void Sacar(double valor)
+        public virtual void Sacar(double valor)
         {
             var novoSaldo = Saldo - valor;
 
